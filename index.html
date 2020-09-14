@@ -1,0 +1,141 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="bitzeny, zny, mining, pool, cryptocurrency">
+    <meta name="description" content="BitZeny node open mining portal">
+
+    <link rel="shortcut icon" href="static/favicon.ico" />
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.4.2/pure-min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.css">
+
+    <script src="/static/main.js"></script>
+
+    <title>Let's Hash It! | letshash.online</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173084346-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-173084346-1');
+    </script>
+    <link href="/static/css/tabler.min.css" rel="stylesheet" />
+    <link href="/static/css/demo.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="wrapper" class="page">
+
+
+        <header class="navbar navbar-expand-md navbar-dark navbar-overlap" style="background-color: #03306a;">
+            <div class="container-xl">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="/" class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pr-0 pr-md-3 mr-3">
+                    <img class="navbar-logo" src="https://letshash.it/assets/logo.png">LETSHASH.online
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <div class="d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center">
+                        <ul class="navbar-nav" id="menu-content">
+
+                            <li class="nav-item {{? it.selected === 'getting_started' }}pure-menu-selected{{?}}">
+                                <a class="nav-link hot-swapper" href="/getting_started">
+                                    <i class="fa fa-rocket"></i>&nbsp;
+                                    Getting Started
+                                </a>
+                            </li>
+                            <li class="nav-item {{? it.selected === 'stats' }}pure-menu-selected{{?}}">
+                                <a class="nav-link hot-swapper" href="/stats">
+                                    <i class="fa fa-bar-chart-o"></i>&nbsp;
+                                    Graph Stats
+                                </a>
+                            </li>
+                            <li class="nav-item {{? it.selected === 'tbs' }}pure-menu-selected{{?}}">
+                                <a class="nav-link hot-swapper" href="/tbs">
+                                    <i class="fa fa-table"></i>&nbsp;
+                                    Tab Stats
+                                </a>
+                            </li>
+                            <li class="nav-item {{? it.selected === 'workers' }}pure-menu-selected{{?}}">
+                                <a class="nav-link hot-swapper" href="/workers">
+                                    <i class="fa fa-cogs"></i>&nbsp;
+                                    Workers Stats
+                                </a>
+                            </li>
+                            <li class="nav-item {{? it.selected === 'api' }}pure-menu-selected{{?}}">
+                                <a class="nav-link hot-swapper" href="/api">
+                                    <i class="fa fa-code"></i>&nbsp;
+                                    API
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="navbar-nav ml-xl-auto text-md-center">
+                            <li class="nav-item m-md-auto">
+                                <span class="nav-link" id="langSelector"></span>
+                            </li>
+                            <li class="nav-item m-md-auto">
+                                <span id="chats">
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="content">
+            <div class="container-xl">
+                <div class="row row-deck row-cards">
+                    <div id="page-wrapper" class="card">
+                        <main class="card-body">
+                            {{=it.page}}
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+
+            <div id="communityFooter">
+                Copyright © 2019-2020
+                <a href="https://letshash.it" class="link-secondary">Letshash.it</a>.
+                All rights reserved.
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.3/jquery.timeago.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="/static/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="/static/libs/peity/jquery.peity.min.js"></script>
+    <script src="/static/js/tabler.min.js"></script>
+
+</body>
+
+</html>
